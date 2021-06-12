@@ -11,7 +11,7 @@ public class AppService {
     private RestTemplate restTemplate;
 
     public String getBackEndResponse(){
-        String backendResponse = restTemplate.getForObject("http://localhost:8000/greet", String.class);
+        String backendResponse = restTemplate.getForObject("http://backend-service:8000/greet", String.class);
 
         return "Response from entry app " + backendResponse;
     }
