@@ -9,6 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class KubernetesEntryAppApplication {
 
 	public static void main(String[] args) {
+		System.out.println("");
 		SpringApplication.run(KubernetesEntryAppApplication.class, args);
 	}
 
